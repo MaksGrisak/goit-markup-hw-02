@@ -1,11 +1,12 @@
 .root{
-    
+  --main-cl: #212121;
+
 }
 
 
 /* header */
-.body-main{
-    
+.body{
+color: var(--main-cl);   
 }
 .logo{
 font-family: 'Raleway';
