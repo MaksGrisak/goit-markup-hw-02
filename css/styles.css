@@ -1,12 +1,27 @@
-.root{
+:root{
+    /* color-txt */
   --main-cl: #212121;
-
+  --accent-txt-cl: #757575;  
+  /* bg-color */
+  --main-bg-cl: #ffffff;
+  /* link-color */
+  --main-link-cl: #2196F3;
+  /* font-family */
+ 
 }
 
 
 /* header */
-.body{
+.page{
 color: var(--main-cl);   
+color: var(--accent-txt-cl);
+background-color: var(--main-bg-cl);
+color: var(--main-link-cl);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
 }
 .logo{
 font-family: 'Raleway';
@@ -19,12 +34,11 @@ text-decoration: none;
 }
    
 .web-color{
-    color: #2196F3;
+    color: var(--main-link-cl);
    
 }
 .studio-color{
-    color: #000000;
-    
+    color: #000000;   
 }
 .link-list-borow{
     font-family: 'Roboto';
@@ -36,9 +50,14 @@ text-decoration: none;
     list-style-type: none;   
    
 }
+.active:visited{
+    color: var(--main-link-cl);
+}
+
+
 .link-list-item:hover,
 .link-list-item:focus{
-    color: #2196F3;
+    color: var(--main-link-cl);
     text-decoration: none; 
 }
 .link-list-item{
@@ -48,13 +67,13 @@ text-decoration: none;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-cl); 
     text-decoration: none;
     
 }
 .contact-list-item:hover,
 .contact-list-item:focus{   
-    color: #2196F3;
+    color: var(--main-link-cl);
     text-decoration: none;
     list-style-type: none;
 }
@@ -65,7 +84,7 @@ text-decoration: none;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--accent-txt-cl);
     text-decoration: none;
     
 }
@@ -91,7 +110,8 @@ text-decoration: none;
 .section-text{
     background-color: #2F303A;
 }
-.button-type{
+/* button-index */
+.button-type-index{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -103,7 +123,10 @@ text-decoration: none;
     letter-spacing: 0.06em;
     background-color: #2196F3;
     color: #FFFFFF;
-    border:none
+    border: 0;
+}
+.button-type-index:active{
+background-color: #188CE8;
 }
 /* section feature */
 .feature-list{
@@ -117,7 +140,7 @@ text-decoration: none;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--main-cl);
 }
 .feature-text{
     font-family: 'Roboto';
@@ -126,7 +149,7 @@ text-decoration: none;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--accent-txt-cl);
 }
 /* personal */
 .section-personal{
@@ -144,7 +167,7 @@ list-style-type: none;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-cl);
 }
 .personal-work{
     font-family: 'Roboto';
@@ -154,9 +177,9 @@ list-style-type: none;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--accent-txt-cl);
 }
-/* footer */
+/* FOOTER */
 .footer{
     background-color: #2F303A;
 }
@@ -165,7 +188,7 @@ text-decoration: none;
 color: #000000;
 }
 .footer span{
-    color: #2196F3;
+    color: var(--main-link-cl);
 }
 .addres-name{
     font-family: 'Roboto';
@@ -175,5 +198,51 @@ color: #000000;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    list-style-type: none;
+}
+/* PORTFOLIO */
+/* button */
+.type-button-portfolio{
+    list-style-type: none;
+    background-color: var(--main-bg-cl);
+    color: var(--main-cl);  
+}
+.type-button-portfolio-item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    background-color: #F5F4FA;
+    color: var(--main-cl);
+}
+.type-button-portfolio-item:hover,
+.type-button-portfolio-item:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+/* title */
+.title-portfolio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--main-cl);  
+}
+.paragraph-portfolio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--accent-txt-cl);
+}
+.link-list-portfolio{
     list-style-type: none;
 }
