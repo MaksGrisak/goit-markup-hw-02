@@ -2,24 +2,34 @@
     /* color-txt */
   --main-cl: #212121;
   --accent-txt-cl: #757575;  
+  --secondary-txt-cl: #ffffff;
+  --tertiary-txt-cl: #000000;
   /* bg-color */
   --main-bg-cl: #ffffff;
+  --accent-bg-cl: #F5F4FA;
+  --tertiary-bg-cl: #2F303A;
   /* link-color */
   --main-link-cl: #2196F3;
-  /* font-family */
+  --accent-link-bg-cl: #188CE8;
+
  
 }
 /* header */
 .page{
 color: var(--main-cl);   
 color: var(--accent-txt-cl);
-background-color: var(--main-bg-cl);
 color: var(--main-link-cl);
+color: var(--accent-link-cl);
+color: var(--secondary-txt-cl);
+color: var(--tertiary-txt-cl);
+background-color: var(--main-bg-cl);
+background-color: var(--accent-link-bg-cl);
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
+background-color: #F5F5F5;
 }
 .logo{
 font-family: 'Raleway';
@@ -36,7 +46,7 @@ text-decoration: none;
    
 }
 .studio-color{
-    color: #000000;   
+    color: var(--tertiary-txt-cl); 
 }
 .link-list-borow{
     font-family: 'Roboto';
@@ -81,7 +91,8 @@ text-decoration: none;
     line-height: 1.1px;
     letter-spacing: 0.02em;
     color: var(--accent-txt-cl);
-    text-decoration: none;    
+    text-decoration: none;
+       
 }
 .contact-item{
     list-style-type: none;  
@@ -132,9 +143,7 @@ background-color: #188CE8;
     letter-spacing: 0.03em;
     color: var(--main-cl);
 }
-.feature-list{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 .feature-title{
     font-family: 'Roboto';
     font-style: normal;
@@ -184,8 +193,16 @@ background-color: #188CE8;
     background-color: #2F303A;
 }
 .footer-logo{
-text-decoration: none;
-color: #000000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--secondary-txt-cl);
 }
 .footer span{
     color: var(--main-link-cl);
@@ -198,11 +215,17 @@ color: #000000;
     color: #FFFFFF;
     list-style-type: none;
 }
+.addres-name-item{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.addres-name-item:hover,
+.addres-name-item:focus{
+color: var(--main-link-cl);
+}
 /* PORTFOLIO */
 /* button */
-.section-portfolio{
-    
-}
+
 .type-button-portfolio{
     list-style-type: none;
 }
@@ -248,3 +271,17 @@ color: #000000;
 .link-work-item{
     text-decoration: none;
 }
+.footer-contact-list-item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact-list-item:hover,
+.footer-contact-list-item:focus{
+color: #2196F3;   
+}
+
