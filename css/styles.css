@@ -45,7 +45,6 @@
 }
 .link-list-borow{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style-type: none;     
@@ -60,7 +59,6 @@
 }
 .link-list-item{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--main-cl);
@@ -76,7 +74,6 @@
 
 .contact-list-item{   
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.1px;
     letter-spacing: 0.02em;
     color: var(--accent-txt-cl);
@@ -128,14 +125,11 @@ background-color: var(--accent-link-bg-cl);
 
 .feature-title{
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-cl);
 }
-.feature-text{
-    font-weight: 400;
-    font-size: 14px;   
+.feature-text{ 
     color: var(--accent-txt-cl);
 }
 /* personal */
